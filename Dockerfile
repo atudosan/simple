@@ -20,6 +20,7 @@ ADD facebook.xml  facebook.xml
 
 # ADD health check script
 ADD healthcheck.sh		healthcheck.sh
+RUN dos2unix healthcheck.sh
 #RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
 
 ENTRYPOINT sh healthcheck.sh
