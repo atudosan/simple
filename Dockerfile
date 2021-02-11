@@ -22,6 +22,6 @@ ADD facebook.xml facebook.xml
 ADD google.xml   google.xml
 
 # ADD health check script
-RUN wget https://s3.amazonaws.com/simple-docker/healthcheck/healthcheck.sh
+RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
 
 ENTRYPOINT sh healthcheck.sh
