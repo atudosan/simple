@@ -16,8 +16,11 @@ ADD target/libs libs
 
 #Add suite files
 ADD google.xml   google.xml
+ADD facebook.xml  facebook.xml
 
 # ADD health check script
-RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
+ADD healthcheck.sh		healthcheck.sh
+#RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
 
 ENTRYPOINT sh healthcheck.sh
+#ENTRYPOINT java -cp simple-docker.jar:simple-docker-tests.jar:libs/* -DHUB_HOST=$HUB_HOST -DBROWSER=$BROWSER  org.testng.TestNG google.xml
