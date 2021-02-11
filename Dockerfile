@@ -15,10 +15,6 @@ ADD target/libs libs
 #ADD src/test/resources/dataproviders	src/test/resources/dataproviders
 
 #Add suite files
-#ADD SignUpTestSuite.xml SignUpTestSuite.xml
-#ADD NegativeLogInTests.xml NegativeLogInTests.xml
-#ADD ValidateItemsFromShopingCartTests.xml ValidateItemsFromShopingCartTests.xml 
-ADD facebook.xml facebook.xml
 ADD google.xml   google.xml
 
 # ADD health check script
