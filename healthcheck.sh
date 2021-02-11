@@ -11,7 +11,7 @@ do
 done
 
 # start the java command
-java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* \
+java -cp simple-docker.jar:simple-docker-tests.jar:libs/* \
     -DHUB_HOST=$HUB_HOST \
     -DBROWSER=$BROWSER \
     org.testng.TestNG testng.xml

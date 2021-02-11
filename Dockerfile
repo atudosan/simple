@@ -7,8 +7,8 @@ RUN apk add curl jq
 WORKDIR usr/docker
 
 #Add .jar file to the image
-ADD target/selenium-docker.jar selenium-docker.jar
-ADD target/selenium-docker-tests.jar selenium-docker-tests.jar
+ADD target/simlpe-docker.jar simlpe-docker.jar
+ADD target/simlpe-docker-tests.jar simlpe-docker-tests.jar
 ADD target/libs libs
 
 #Add files
@@ -22,6 +22,6 @@ ADD facebook.xml facebook.xml
 ADD google.xml   google.xml
 
 # ADD health check script
-RUN wget https://s3.amazonaws.com/selenium-docker/healthcheck/healthcheck.sh
+RUN wget https://s3.amazonaws.com/simple-docker/healthcheck/healthcheck.sh
 
 ENTRYPOINT sh healthcheck.sh

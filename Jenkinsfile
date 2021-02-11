@@ -12,7 +12,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 
-                bat "docker build -t=atudosan/selenium-docker ."
+                bat "docker build -t=atudosan/simple-docker ."
             }
         }
         stage('Push Image') {
@@ -20,7 +20,7 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     
 			        bat "docker login --username=${user} --password=${pass}"
-			        bat "docker push atudosan/selenium-docker"
+			        bat "docker push atudosan/simple-docker"
 			    }                           
             }
         }
