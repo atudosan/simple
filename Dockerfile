@@ -7,8 +7,8 @@ RUN apk add curl jq
 WORKDIR usr/docker
 
 #Add .jar file to the image
-ADD target/simlpe-docker.jar simlpe-docker.jar
-ADD target/simlpe-docker-tests.jar simlpe-docker-tests.jar
+ADD target/simple-docker.jar simple-docker.jar
+ADD target/simple-docker-tests.jar simple-docker-tests.jar
 ADD target/libs libs
 
 #Add files
