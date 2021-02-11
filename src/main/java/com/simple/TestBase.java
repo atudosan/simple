@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	RemoteWebDriver driver;
+	protected RemoteWebDriver driver;
 	DesiredCapabilities dc;
 
 	@BeforeTest
