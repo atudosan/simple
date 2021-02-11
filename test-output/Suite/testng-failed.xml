@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.simple.Google">
+      <class name="tests.Facebook">
         <methods>
           <include name="getUrl"/>
           <include name="createDriver"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.simple.Google -->
+      </class> <!-- tests.Facebook -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
